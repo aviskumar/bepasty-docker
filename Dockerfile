@@ -1,7 +1,7 @@
 FROM python:3.9
 MAINTAINER Arne Schauf
 
-RUN apt-get update && apt-get upgrade -y && apt-get install -y python-pip python-dev
+RUN apt-get update && apt-get upgrade -y && apt-get install -y python3-pip python-dev
 ADD requirements.txt /opt/requirements.txt
 RUN pip install -r /opt/requirements.txt
 
